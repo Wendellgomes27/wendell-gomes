@@ -25,8 +25,14 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(black, #111);
   text-align: center;
+
+  background: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('img/trofeu1.png');
+
+  background-size: cover;
+  background-position: center;
 }
 
 .hero h2 {
