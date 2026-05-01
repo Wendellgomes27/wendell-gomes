@@ -22,9 +22,11 @@ nav a {
 /* HERO */
 .hero {
   height: 90vh;
-  background: url('main/trofeu1.png');
-  background-size: cover;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: url('fundo.png');
   background-size: cover;
   background-position: center;
 }
