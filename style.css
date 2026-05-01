@@ -25,11 +25,12 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
   background: url('fundo.png');
   background-size: cover;
-  background-position: center;
-}
+  background-position: center top; /* 👈 AQUI */
+  }
 
 .hero h2 {
   font-size: 45px;
