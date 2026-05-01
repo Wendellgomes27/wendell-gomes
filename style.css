@@ -29,8 +29,8 @@ nav a {
 
   background: url('fundo.png');
   background-size: cover;
-  background-position: center; /* 👈 AQUI */
-  }
+  background-position: center 20%;
+}
 
 .hero h2 {
   font-size: 45px;
