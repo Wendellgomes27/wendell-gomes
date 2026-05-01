@@ -1,10 +1,11 @@
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: 'Poppins', sans-serif;
   background: #0a0a0a;
   color: white;
 }
 
+/* NAV */
 header {
   display: flex;
   justify-content: space-between;
@@ -14,36 +15,57 @@ header {
 
 nav a {
   margin: 0 10px;
-  color: white;
   text-decoration: none;
+  color: white;
 }
 
+/* HERO */
 .hero {
   height: 90vh;
-  background: linear-gradient(black, #111);
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(black, #111);
   text-align: center;
 }
 
 .hero h2 {
-  font-size: 40px;
+  font-size: 45px;
   color: red;
 }
 
 .btn {
   background: red;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
+  padding: 12px 25px;
   display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+/* SOBRE */
+.sobre-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+.sobre img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.badges span {
+  display: block;
   margin-top: 10px;
 }
 
-section {
-  padding: 60px 20px;
+/* PLANOS */
+.planos {
   text-align: center;
+  padding: 50px;
 }
 
 .cards {
@@ -61,9 +83,43 @@ section {
 
 .destaque {
   background: red;
+  transform: scale(1.05);
 }
 
+/* CONTATO */
+.contato {
+  text-align: center;
+  padding: 50px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+/* FOOTER */
 footer {
-  background: black;
+  text-align: center;
   padding: 20px;
+  background: black;
+}
+
+/* RESPONSIVO */
+@media(max-width: 800px){
+  .sobre-container {
+    flex-direction: column;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
